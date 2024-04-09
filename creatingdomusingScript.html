@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating dom using Script</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+</body>
+<script>
+    const divC = document.createElement("div");
+    console.log(divC);
+    divC.className = "div_class";
+    divC.id = Math.round(Math.random()*10+1);
+    divC.setAttribute("title", "generated-title");
+    divC.style.backgroundColor = 'red';
+    divC.style.padding = '14px';
+    divC.innerText = "created text";
+    // const divText = document.createTextNode("Created div");
+    // divC.appendChild(divText);
+    document.body.appendChild(divC);
+
+</script>
+</html>

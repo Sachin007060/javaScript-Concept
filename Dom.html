@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation using javaScript</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+</body>
+<script>
+    const prnt = document.querySelector('.parent');
+    // console.log(prnt);
+    // console.log(prnt.children);
+    // console.log(prnt.children[1].innerHTML);
+
+    for (let i = 0; i < prnt.children.length; i++) {
+        // console.log(prnt.children[i].innerHTML);
+    }
+
+    prnt.children[1].style.color = "red";
+    // console.log(prnt.firstElementChild);
+    // console.log(prnt.lastElementChild);
+
+    const oneDay = prnt.querySelector('.day');
+    // console.log(oneDay);
+    // console.log(oneDay.parentElement);
+    // console.log(oneDay.nextElementSibling);
+
+    console.log("All Nodes in Structure way:", prnt.childNodes);
+
+</script>
+</html>
